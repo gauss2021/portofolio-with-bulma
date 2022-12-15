@@ -3,46 +3,165 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Portefolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   </head>
   <body>
-  <header>
-        <div class="colums has-background-light">
-            <div class="container has-background-grey py-4"></div>
-        </div>
-  </header>
-  <main class="my-5">
-    <section>
-        <div class="container">
-            <div class="columns">
-                <div class="column is-12-mobile is-6-tablet is-align-self-center">
-                    <h1 class="title has-text-centered-mobile has-text-centered-tablet">Je suis Davydson Bioussala</h1>
-                    <h2 class="subtitle has-text-centered-mobile has-text-centered-tablet" >Developpeur freelance web et mobile</h2>
-                    <h4 class="is-size-4 has-text-centered-mobile has-text-centered-tablet">Bienvenue dans mon univers</h4>
-                    <div class="is-flex is-justify-content-center">
-                        <button class="button is-info is-align-self-center">Mon expertise</button>
-                    </div> 
+    <header>
+        <div class="colums has-background-light px-5">
+            <nav class="navbar has-background-light py-2" style="position: fixed;
+            left:0px;right:0px; top:0px" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                   <a href="/" class="navbar-item"><h1 class="title"><span class="has-text-warning">Gauss</span> Jordan</h1></a> 
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
                 </div>
-                <div class="column is-12-mobile is-5-tablet is-offset-1">
-                    <img src="./images/screenshot.jpg" alt="" srcset="" width="100%">
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-end">
+                    <a class="navbar-item" href="#Quisuije">
+                      Qui je suis?
+                    </a>
+                    <a class="navbar-item" href="#expertise">
+                      Mon expertise
+                    </a>
+                    <a class="navbar-item" href="#mecontacter">
+                        Me contacter
+                    </a>
+                  </div>
+              </nav>
+        </div>
+    </header>
+    <main class="my-5-desktop" style="margin-top:100px">
+        <section id="Quisuije">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-12-mobile is-6-tablet is-align-self-center">
+                        <h1 class="title has-text-centered-mobile has-text-centered-tablet">Je suis <span class="has-text-warning">Davydson</span> Bioussala</h1>
+                        <h2 class="subtitle has-text-centered-mobile has-text-centered-tablet" >Developpeur freelance web et mobile</h2>
+                        <h4 class="is-size-4 has-text-centered-mobile has-text-centered-tablet">Bienvenue dans mon univers</h4>
+                        <div class="is-flex is-justify-content-center">
+                            <a href="#expertise" class="button is-info is-align-self-center mt-2">Mon expertise</a>
+                        </div> 
+                    </div>
+                    <div class="column is-12-mobile is-5-tablet is-offset-1">
+                        <img src="./images/screenshot.jpg" alt="" srcset="" width="100%">
+                    </div>
                 </div>
             </div>
+
+        </section>
+        <section class="section has-background-light">
+                <div class="container" id="expertise">
+                        <h2 class="title is-2 has-text-centered has-text-warning">Mes expertises</h2>
+                        <h4 class="title is-4">Entre le web et le mobile</h4>
+                        <div class="columns">
+                            <div class="column is-12-mobile is-7-tablet is-6-desktop">
+                                <img src="./images/code.jpeg" alt="" srcset="" style="width: 100%;">
+                            </div>
+                            <div class="column is-12-mobile is-4-tablet is-offset-1-tablet is-5-desktop">
+                                <div class="is-flex is-flex-direction-column">
+                                    <div class="pt-3 pb-5 px-5 has-background-white">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-html5 has-text-link mr-2 is-size-4"></i>HTML</p>
+                                        <progress class="progress is-primary" value="95" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-css3-alt has-text-danger mr-2 is-size-4"></i>CSS</p>
+                                        <progress class="progress is-primary" value="95" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-js mr-2 is-size-4 has-text-warning"></i>Javascript</p>
+                                        <progress class="progress is-primary" value="90" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-php has-text-info mr-2 is-size-4"></i>PHP</p>
+                                        <progress class="progress is-primary" value="90" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-vuejs has-text-success mr-2 is-size-4"></i>Vue js</p>
+                                        <progress class="progress is-warning" value="60" max="100">15%</progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-12-mobile is-7-tablet is-6-desktop">
+                                <div class="is-flex is-flex-direction-column">
+                                    <div class="pt-3 pb-5 px-5 has-background-white">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-symfony has-text-link mr-2 is-size-4"></i>Symfony</p>
+                                        <progress class="progress is-danger" value="50" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-bootstrap has-text-danger mr-2 is-size-4"></i>Bootstrap</p>
+                                        <progress class="progress is-primary" value="95" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-js mr-2 is-size-4 has-text-warning"></i>Nuxt js</p>
+                                        <progress class="progress is-primary" value="90" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-react has-text-info mr-2 is-size-4"></i>React js</p>
+                                        <progress class="progress is-warning" value="75" max="100">15%</progress>
+                                    </div>
+                                    <div class="pt-3 pb-5 px-5 has-background-white mt-4">
+                                        <p class="has-text-centered is-size-5"><i class="fa-brands fa-vuejs has-text-success mr-2 is-size-4"></i>Bulma</p>
+                                        <progress class="progress is-warning" value="60" max="100">15%</progress>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-12-mobile is-4-tablet is-offset-1-tablet is-5-desktop">
+                                <img src="./images/code.jpeg" alt="" srcset="" width="100%">
+                            </div>
+                        </div>
+                </div>
+        </section>
+        <section id="mecontacter">
+                <div class="container py-4">
+
+                    <h2 class="title is-2 has-text-centered has-text-warning">Discutez d'un projet</h2>
+                    <form action="">
+                        <div class="field">
+                            <label class="label has-text-centered-mobile">Nom complet</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Entrer votre nom complet">
+                            </div>
+                        </div>
+                    
+                        <div class="field">
+                        <label class="label has-text-centered-mobile">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Votre adresse">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-centered-mobile">Message</label>
+                            <div class="control">
+                            <textarea class="textarea" placeholder="Votre message ici"></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-info" style="width: 100%;">Me contacter</button>
+                    </form>
+        </section>
+      
+    </main>
+    <footer class="has-background-light py-4">
+        <div class="columns is-flex-mobile">
+            <div class="column is-6-mobile">
+                <p class="has-text-centered-desktop has-text-left-mobile has-text-right-tablet ml-2">Tous droits revervees </p>
+            </div>
+            <div class="column is-5-mobile is-offset-1-mobile is-flex-mobile mr-2">
+                <i class="fa-brands fa-facebook has-text-info is-size-3 mr-3"></i><i class="fa-brands fa-linkedin is-size-3 mr-3"></i><i class="fa-brands fa-twitter is-size-3 has-text-info"></i>
+            </div>
         </div>
-
-    </section>
-    <section>
-      
-    </section>
-    <section>
-      
-    </section>
-    <section>
-      
-  </main>
-  </section>
-  <footer>
-
-  </footer>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/4d718a6eb5.js" crossorigin="anonymous"></script>
+    <script src="./toogle.js"></script>
+    
   </body>
 </html>
